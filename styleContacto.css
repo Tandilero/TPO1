@@ -1,0 +1,109 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: rgb(225, 237, 237);
+}
+
+/* HEADER */
+
+.header>ul {
+    display: flex;
+    border-radius: 10px;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    list-style-type: none;
+    text-align: center;
+    font-size: large;
+    margin: 5px;
+    background-color: rgba(30, 42, 63, 0.548);
+    width: 1fr;
+    
+}
+
+li {
+    color: azure;
+    text-align: center;
+    padding: 14px 16px;
+    border: 1px solid #bbb;
+    border-radius: 10px;
+    background-color: #0065c6;
+}
+
+li:hover {
+    background-color: #bbb;
+}
+a:link, a:visited,  a:hover, a:active
+{
+    color: azure;
+    text-decoration: none;
+}
+
+
+
+/*CONTACTO*/
+.header {
+    color: #36A0FF;
+    font-size: 27px;
+    padding: 10px;
+}
+
+.bigicon {
+    font-size: 35px;
+    color: #36A0FF;
+}
+.infoContacto{ 
+    display:grid;
+    grid-template-rows: auto auto auto;
+    gap: 5px;
+}
+.GridRedes{
+    height: auto;
+    width: 1fr;
+    border: 5px solid #868c95;
+    border-radius:15px;
+    background-color:#0065c6;
+    text-align: center;
+    padding-top: 3px;
+    
+}
+
+/*FOOTER*/
+
+.footer {
+    position: fixed;
+    left: 0%;
+    bottom: 5px;
+    width: 100%;
+    height: 40px;
+    background-color: #003a70;
+    color: white;
+    text-align: center;
+ }
+
+ @media only screen and (max-width: 600px) {
+    body {
+        background-color: yellow;
+    }
+ }
+
+ @media only screen and (min-width: 600px) {
+    body {
+        background-color: #fffaf4;
+    }
+ }
+
+ @media only screen and (min-width: 768px) {
+    body {
+        background-color: #f8efe7;
+    }
+ }
+
+ @media only screen and (min-width: 992px) {
+    body {
+        background-color: rgb(225, 237, 237);
+    }
+ }

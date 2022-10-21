@@ -1,0 +1,135 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: rgb(225, 237, 237,);
+}
+
+/* HEADER */
+
+
+.header>ul {
+    display: flex;
+    border-radius: 10px;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    list-style-type: none;
+    text-align: center;
+    font-size: large;
+    margin: 5px;
+    background-color: rgba(30, 42, 63, 0.548);
+    width: 1fr;
+    
+}
+.logo{
+   margin-left: -1000px;
+}
+
+li {
+    color: azure;
+    text-align: center;
+    padding: 14px 16px;
+    border: 1px solid #bbb;
+    border-radius: 10px;
+    background-color: #0065c6;
+}
+
+li:hover {
+    background-color: #333;
+}
+a:link, a:visited,  a:hover, a:active
+{
+    color: azure;
+    text-decoration: none;
+}
+
+
+h1 {
+    text-align: center; 
+    align-items: center; 
+    font-size: 38px ; 
+    color:#0065c6; 
+    width: 100%; 
+    margin-top: 15px;
+}
+.imagen{
+    border: 2px solid #868c95; 
+    border-radius: 10px;
+    line-height:0;
+    overflow: hidden;
+  
+}
+.gridcontainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    padding: 15px;
+    margin-bottom: 25px;
+    background-color: #0065c6;
+    background-image: url(imagenes/coffee_time_duo.jpg);
+    background-blend-mode: darken;
+    background-size:contain;
+    border: 2px solid #868c95; 
+    border-radius: 10px;
+    overflow: hidden;
+    align-items: center;
+    }
+    .grid-item {
+        align-items: center;
+        display: block;
+        overflow: hidden;
+        margin: 0px auto;
+        text-align: center;
+        color: rgb(225, 237, 237);
+        border: 2px solid #868c95;
+        border-radius: 10px;
+        
+
+    }
+
+
+/* PARTNERS*/
+
+.partnercontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    padding: 5px 5px 5px;
+    width: 99%;
+    background-color: rgba(30, 42, 63, 0.548);
+    border-radius: 10px;
+}
+
+ .partnercontainer div{
+    display:flex;
+    flex-direction: column;
+    text-align:center;
+    justify-content: center;
+    color: whitesmoke;
+    width: auto;
+    height: 200px;
+    font-size: 20px;
+    border: 0, 5px solid #5964c5;
+    border-radius: 10px;
+}
+
+
+/*FOOTER*/
+
+.footer {
+    position: fixed;
+    left: 0%;
+    bottom: 5px;
+    width: 100%;
+    height: 40px;
+    background-color: #003a70;
+    color: white;
+    text-align: center;
+ }
+
+ @media only screen and (max-width: 650px){
+    .imagen {  height: auto; }
+    .gridcontainer {grid-template-columns: 1fr;}
+    .gridcontainer2 {grid-template-columns: 1fr;}
+}
