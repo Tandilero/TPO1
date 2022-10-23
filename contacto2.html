@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <link rel="stylesheet" href="styleContacto2.css">
+        <title>Máquinas expendedoras</title>
+        <!-- FONT AWESOME -->
+        <script src="https://kit.fontawesome.com/e0bb78e3c8.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+
+        <!--HEADER-->
+        <nav>
+            <button class="nav-boton" onclick="seleccionarMenu()" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Menú</button>
+            <a href="index.html" class="nav-enlace desaparece">Inicio</a>
+            <a href="pageMaquinas.html" class="nav-enlace desaparece">Expendedoras</a>
+            <a href="pageProductos.html" class="nav-enlace desaparece">Productos</a>
+            <a href="contacto2.html" class="nav-enlace desaparece">Contactanos</a>
+        </nav>
+
+        <script type="text/javascript" src="funciones.js"></script>
+
+        <!--FORMULARIO DE CONTACTO-->
+
+        <div class="content">
+            <h1 class="text-center">Contactanos</h1>
+
+            <div class="contact-wraper">
+                <div class="contact-form">
+                        <form name="form" action="#" method="POST">
+                            <p>
+                                <label>Nombre</label>
+                                <input type="text" name="fullname" id="fullname">
+                            </p>
+                            <p>
+                                <label>Correo</label>
+                                <input type="text" name="email" id="email">
+                            </p>
+                            <p>
+                                <label>Teléfono</label>
+                                <input type="tel" name="phone" id="phone">
+                            </p>
+                            <p>
+                                <label>Asunto</label>
+                                <input type="text" name="affair" id="affair">
+                            </p>
+                            <p class="block">
+                                <label>Mensaje</label>
+                                <textarea name="message" id="message"></textarea>
+                            </p class="block">
+                                <button type="submit" onclick="return validar()">Enviar</button>
+                            </p>
+                        </form>
+                </div>
+                <div class="contact-info">
+                    <h4>Más información</h4>
+                    <ul>
+                        <li><i class="fa-solid fa-location-dot"></i> Av. Gaona 1956, CABA</li>
+                        <li><i class="fa-solid fa-phone"></i> 4431-5200</li>
+                        <li><i class="fa-brands fa-whatsapp"></i> 11567689931</li>
+                        <li><i class="fa-brands fa-instagram"></i> @maquinasexpendedoras</li>
+                    </ul>
+                    <h4>Vending machines</h4>
+                    
+                </div>
+            </div>
+        </div>
+        
+        
+    </body>
+        
+</html>
