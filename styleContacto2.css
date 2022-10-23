@@ -1,0 +1,161 @@
+/*{
+    box-sizing: border-box;
+    /*font-family: 'Roboto Slab', serif;
+}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: lightblue;
+}*/
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: rgb(225, 237, 237);
+}
+
+/*MENU*/
+nav{
+    background-color: lightblue;
+    display: flex;
+    /*Para que quede a la izquierda pongo flex-end - al medio space-around*/
+    justify-content: space-around;
+    margin: 10px;
+}
+.nav-enlace{
+    display: inline-block;
+    background-color: #0065c6;
+    color: white;
+    font-weight: bold;
+    padding: 10px 30px;
+    text-decoration: none;
+    border: 1px solid;
+    width: 100%;
+    text-align: center;
+}
+.nav-enlace:hover{
+    background-color: #333;
+}
+.nav-boton{
+    background-color: #0065c6;
+    color: white;
+    padding: 10px 0;
+    border: 1px solid;
+    display: none;
+    font-weight: bold;
+    font-size: large;
+}
+.nav-boton:hover{
+    background-color: #333;
+}
+
+
+
+.text-center{
+    text-align: center;
+}
+
+
+.content{
+    width: auto;
+    margin: 10px;
+}
+
+.contact-wraper{
+
+    background-color: #0065c6;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.contact-form{
+    background-color: rgb(225, 237, 237);
+    align-items: center;
+}
+
+.contact-form form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form .block{
+    grid-column: 1 / 3;
+}
+.contact-form form p{
+    margin: 0;
+    padding: 15px;
+}
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    background: none;
+    outline: 0;
+    border-bottom: 1px solid #000;
+}
+.contact-form form button{
+    background-color: #0065c6;
+    font-size: large;
+    border: 0;
+    margin: 20px;
+    padding: 10px 0;
+    
+}
+.contact-form form button:hover{
+    color: #fff;
+}
+.contact-info{
+    padding: auto 10px;
+    background-color: cornflowerblue;
+    text-align: center;
+}
+
+
+.contact-info ul {
+    list-style: none;
+    padding: 10px;
+}
+
+
+@media only screen and (max-width:900px){
+    nav{
+        flex-direction: column;
+    }
+    .nav-enlace{
+        margin: 0;
+        width: auto;
+    }
+    .nav-boton{
+        display: inline-block;
+    }
+    .desaparece{
+        display: none;
+    }
+
+    .contact-wraper{
+        display: grid;
+        grid-template-columns: 2fr;
+    }
+
+
+}
+
+@media only screen and (max-width: 600px){
+    nav{
+        flex-direction: column;
+    }
+    .nav-enlace{
+        margin: 0;
+    }
+    .nav-boton{
+        display: inline-block;
+    }
+    .desaparece{
+        display: none;
+    }
+}

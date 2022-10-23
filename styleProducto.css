@@ -6,41 +6,40 @@ body {
     background-color: rgb(225, 237, 237);
 }
 
-
-/*HEADER*/
-
-.header>ul {
+/*MENU*/
+nav{
+    background-color: lightblue;
     display: flex;
-    border-radius: 10px;
-    flex-flow: row wrap;
-    justify-content: flex-end;
-    list-style-type: none;
-    text-align: center;
-    font-size: large;
-    margin: 5px;
-    background-color: rgba(30, 42, 63, 0.548);
-    width: 1fr;
-    
+    /*Para que quede a la izquierda pongo flex-end - al medio space-around*/
+    justify-content: space-around;
+    margin: 10px;
 }
-
-li {
-    color: azure;
-    text-align: center;
-    padding: 14px 16px;
-    border: 1px solid #bbb;
-    border-radius: 10px;
+.nav-enlace{
+    display: inline-block;
     background-color: #0065c6;
+    color: white;
+    font-weight: bold;
+    padding: 10px 30px;
+    text-decoration: none;
+    border: 1px solid;
+    width: 100%;
+    text-align: center;
 }
-
-li:hover {
+.nav-enlace:hover{
     background-color: #333;
 }
-a:link, a:visited,  a:hover, a:active
-{
-    color: azure;
-    text-decoration: none;
+.nav-boton{
+    background-color: #0065c6;
+    color: white;
+    padding: 10px 0;
+    border: 1px solid;
+    display: none;
+    font-weight: bold;
+    font-size: large;
 }
-
+.nav-boton:hover{
+    background-color: #333;
+}
 
 h1 {
     text-align: center; 
@@ -204,8 +203,23 @@ h1 {
 
 }
 
+/*REVISAR LOS MEDIA*/
+@media only screen and (max-width:900px){
+    nav{
+        flex-direction: column;
+    }
+    .nav-enlace{
+        margin: 0;
+        width: auto;
+    }
+    .nav-boton{
+        display: inline-block;
+    }
+    .desaparece{
+        display: none;
+    }
 
-
+}
 
 @media only screen and (max-width: 750px){
     .imagen {  height: auto; }
