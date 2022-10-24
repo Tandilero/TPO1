@@ -194,4 +194,5 @@ h1 {
     .imagen {  height: auto; }
     .gridcontainer {grid-template-columns: 1fr;}
     .gridcontainer2 {grid-template-columns: 1fr;}
+    .partnercontainer{grid-template-columns: 1fr;}
 }
