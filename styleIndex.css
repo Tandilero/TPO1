@@ -47,22 +47,24 @@ a:link, a:visited,  a:hover, a:active
 
 /*MENU*/
 nav{
-    background-color: lightblue;
+    background-color: rgb(225, 237, 237,);
     display: flex;
     /*Para que quede a la izquierda pongo flex-end - al medio space-around*/
     justify-content: space-around;
-    margin: 10px;
+    margin: 10px 0px;
 }
 .nav-enlace{
     display: inline-block;
     background-color: #0065c6;
-    color: white;
+    color: azure;
+    justify-content:stretch;
     font-weight: bold;
     padding: 10px 30px;
     text-decoration: none;
-    border: 1px solid;
+    border: 2px solid #868c95;
     width: 100%;
     text-align: center;
+    border-radius: 10px;
 }
 .nav-enlace:hover{
     background-color: #333;
@@ -75,6 +77,7 @@ nav{
     display: none;
     font-weight: bold;
     font-size: large;
+   
 }
 .nav-boton:hover{
     background-color: #333;
@@ -172,9 +175,14 @@ h1 {
     .nav-enlace{
         margin: 0;
         width: auto;
+        
     }
     .nav-boton{
         display: inline-block;
+        border-radius: 10px;
+        border: 2px solid #868c95;
+        width: 100%;
+        
     }
     .desaparece{
         display: none;
