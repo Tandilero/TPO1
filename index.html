@@ -1,123 +1,103 @@
 <!DOCTYPE html>
 <html lang="es">
 
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styleIndex.css">
+        <script src="https://kit.fontawesome.com/c0aa7bf68f.js" crossorigin="anonymous"></script>
+        <title>Máquinas expendedoras</title>
+    </head>
 
+    <!--API-->
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styleIndex.css">
-    <script src="https://kit.fontawesome.com/c0aa7bf68f.js" crossorigin="anonymous"></script>
-    <title>Máquinas expendedoras</title>
+    <script>
+        var myHeaders = new Headers();
+        myHeaders.append("x-access-token", "goldapi-5r8sitl9e8r3nr-io");
+        myHeaders.append("Content-Type", "application/json");
 
-  
+        var requestOptions = {
+        method: 'GET',
+        headers: myHeaders,
+        redirect: 'follow'
+        };
+        console.log(requestOptions)
 
-</html>
-
-<!--API-->
-
-<script>
-    var myHeaders = new Headers();
-myHeaders.append("x-access-token", "goldapi-5r8sitl9e8r3nr-io");
-myHeaders.append("Content-Type", "application/json");
-
-var requestOptions = {
- method: 'GET',
- headers: myHeaders,
- redirect: 'follow'
-};
-console.log(requestOptions)
-
-fetch("https://www.goldapi.io/api/XAU/USD", requestOptions)
- .then(response => response.json())
- .then(result => document.getElementById("cafe").innerHTML =(result.price))
- .catch(error => console.log('error', error));
-
- 
-           
+        fetch("https://www.goldapi.io/api/XAU/USD", requestOptions)
+        .then(response => response.json())
+        .then(result => document.getElementById("cafe").innerHTML =(result.price))
+        .catch(error => console.log('error', error));  
+            
    </script>
 
-<body>
+    <body>
 
-  
-    <!--HEADER
-    <div class="header">
-        <ul>
-            <li style="order: 1;"> <a href="index.html">INICIO</a></li>
-            <li style="order: 2;"> <a href="pageMaquinas.html">EXPENDEDORAS</a></li>
-            <li style="order: 3;"> <a href="PageProductos.html">PRODUCTOS</a></li>
-            <li style="order: 4;"> <a href="contacto2.html">CONTACTO</a></li>
-        </ul>    
-    </div>-->
+        <!--HEADER-->
+        <nav>
+            <button class="nav-boton" onclick="seleccionarMenu()">Menú</button>
+            <a href="index.html" class="nav-enlace desaparece">Inicio</a>
+            <a href="pageMaquinas.html" class="nav-enlace desaparece">Expendedoras</a>
+            <a href="pageProductos.html" class="nav-enlace desaparece">Productos</a>
+            <a href="contacto2.html" class="nav-enlace desaparece">Contactanos</a>
+        </nav>
 
-    <!--HEADER-->
-    <nav>
-        <button class="nav-boton" onclick="seleccionarMenu()">Menú</button>
-        <a href="index.html" class="nav-enlace desaparece">Inicio</a>
-        <a href="pageMaquinas.html" class="nav-enlace desaparece">Expendedoras</a>
-        <a href="pageProductos.html" class="nav-enlace desaparece">Productos</a>
-        <a href="contacto2.html" class="nav-enlace desaparece">Contactanos</a>
-    </nav>
+        <script type="text/javascript" src="funciones.js"></script>
+        <!--IMAGEN-->
+        <div class="imagen">
+            <img  src="imagenes/vendmachine3.jpg" alt="imagen fondo" height="auto" width="100%">
 
-    <script type="text/javascript" src="funciones.js"></script>
-     <!--IMAGEN-->
-     <div class="imagen">
-        <img  src="imagenes/vendmachine3.jpg" alt="imagen fondo" height="auto" width="100%">
-
-     </div>
-    
-    <!--ENCABEZADO-->
-    <div>
-        <h1 style="text-align: center; align-items: center; font-size: 38px ; color: #15638f; width: 100%; margin-top: 15px;"><b>SERVICIO
-                INTEGRAL DE MÁQUINAS
-                EXPENDEDORAS</b></h1>
-    </div>
+        </div>
+        
+        <!--ENCABEZADO-->
+        <div>
+            <h1 style="text-align: center; align-items: center; font-size: 38px ; color: #15638f; width: 100%; margin-top: 15px;"><b>SERVICIO
+                    INTEGRAL DE MÁQUINAS
+                    EXPENDEDORAS</b></h1>
+        </div>
 
     
-    <div class="gridcontainer">
-        <div class="grid-item">
-            <h3><u>NOSOTROS</u></h3>
-            <p>
-                Mas de 30 años en el mercado avalan nuestra trayectoria ,Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi pariatur omnis quaerat, quibusdam aspernatur, dignissimos, veniam ipsam incidunt ut recusandae quisquam ab nostrum autem consequatur consectetur totam! Consequatur saepe dolores ullam quam dolorem officiis vero itaque quasi, deleniti quod omnis minima, mollitia natus repellendus quis voluptates tempora velit facilis sit necessitatibus sequi cumque alias! Repellendus, eum ullam? Velit nihil doloribus, molestiae quaerat, in, aspernatur rem vero dolorum ea similique et.
-             <br><br><br><br>
-            </p>
-        </div>
-        <div class="grid-item" style="line-height: 0" >
-            <img src="imagenes/logo azul.png" width="100%" height="100%">
-        </div>
+        <div class="gridcontainer">
+            <div class="grid-item">
+                <h3><u>NOSOTROS</u></h3>
+                <p>
+                    Mas de 30 años en el mercado avalan nuestra trayectoria ,Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi pariatur omnis quaerat, quibusdam aspernatur, dignissimos, veniam ipsam incidunt ut recusandae quisquam ab nostrum autem consequatur consectetur totam! Consequatur saepe dolores ullam quam dolorem officiis vero itaque quasi, deleniti quod omnis minima, mollitia natus repellendus quis voluptates tempora velit facilis sit necessitatibus sequi cumque alias! Repellendus, eum ullam? Velit nihil doloribus, molestiae quaerat, in, aspernatur rem vero dolorum ea similique et.
+                <br><br><br><br>
+                </p>
+            </div>
+            <div class="grid-item" style="line-height: 0" >
+                <img src="imagenes/logo azul.png" width="100%" height="100%">
+            </div>
 
 
-        <div class="grid-item">
-            <h3><u>SERVICIO</u></h3>
+            <div class="grid-item">
+                <h3><u>SERVICIO</u></h3>
 
-           <p> Usted o su empresa pueden brindar un servicio extra sin costo alguno para que sus empleados, clientes o pacientes puedan disfrutar de un excelente café. Máquinas automáticas, de última generación que incluyen mantenimiento frecuente, service y un trato personalizado. Ofrecemos la gama más amplia de bebidas calientes para cubrir todas las necesidades de sus consumidores, Las máquinas son automáticas o semi automáticas de última generación, destacándose por su fácil empleo y la alta calidad de los productos erogados. También poseemos máquinas de snack y gaseosas, con las cuales se puede disfrutar de un refrigerio a cualquier hora del día, sin la necesidad de salir de su empresa</p>
+            <p> Usted o su empresa pueden brindar un servicio extra sin costo alguno para que sus empleados, clientes o pacientes puedan disfrutar de un excelente café. Máquinas automáticas, de última generación que incluyen mantenimiento frecuente, service y un trato personalizado. Ofrecemos la gama más amplia de bebidas calientes para cubrir todas las necesidades de sus consumidores, Las máquinas son automáticas o semi automáticas de última generación, destacándose por su fácil empleo y la alta calidad de los productos erogados. También poseemos máquinas de snack y gaseosas, con las cuales se puede disfrutar de un refrigerio a cualquier hora del día, sin la necesidad de salir de su empresa</p>
+            </div>
         </div>
-    </div>
-    <br>
+        <br>
 
    
-    <!--PARTNERS-->
-    <div class="partnercontainer">
-        <div style="background-color: #003a70;"><P>PRECIO DEL CAFE</P><P id="cafe"></P><p>usd/lbs</p></div>
-        <div style="background-color: #0065c6;"><i class="fa-solid fa-truck-fast fa-5x"></i><br><p>ENVÍOS A TODO EL PAÍS</p></div>
-        <div style="background-color: #00a8ff;"><i class="fa-solid fa-trophy fa-5x"></i><p>LIDERES</p></div>
-        <div style="background-color: #4b5e92"><i class="fa-solid fa-people-group fa-4x"></i><p>MÁS DE 700 CLIENTES CONFÍAN EN NOSOTROS</p></div>
-    </div>
+        <!--PARTNERS-->
+        <div class="partnercontainer">
+            <div style="background-color: #003a70;"><P>PRECIO DEL CAFE</P><P id="cafe"></P><p>usd/lbs</p></div>
+            <div style="background-color: #0065c6;"><i class="fa-solid fa-truck-fast fa-5x"></i><br><p>ENVÍOS A TODO EL PAÍS</p></div>
+            <div style="background-color: #00a8ff;"><i class="fa-solid fa-trophy fa-5x"></i><p>LIDERES</p></div>
+            <div style="background-color: #4b5e92"><i class="fa-solid fa-people-group fa-4x"></i><p>MÁS DE 700 CLIENTES CONFÍAN EN NOSOTROS</p></div>
+        </div>
 
-    <br><br>
-    <!--CONTACTO-->
+        <br><br>
 
+        <!--FOOTER-->
+        <footer>
+        <div class="footer">
+            <p>
+                ATENCIÓN DE LUNES A VIERNES DE 8 A 17
+            </p>
+        </div>
+        </footer>
 
-    <!--FOOTER-->
-<footer>
-  <div class="footer">
-    <p>
-        ATENCIÓN DE LUNES A VIERNES DE 8 A 17
-    </p>
-  </div>
-</footer>
-
-</body>
+    </body>
 
 </html>
