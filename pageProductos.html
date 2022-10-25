@@ -1,36 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styleProducto.css">
-    <title>PRODUCTOS</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styleProducto.css">
+        <title>PRODUCTOS</title>
+    </head>
 
     <body>
+        <!--HEADER-->
+        <nav>
+            <button class="nav-boton" onclick="seleccionarMenu()" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Menú</button>
+            <a href="index.html" class="nav-enlace desaparece">Inicio</a>
+            <a href="pageMaquinas.html" class="nav-enlace desaparece">Expendedoras</a>
+            <a href="pageProductos.html" class="nav-enlace desaparece">Productos</a>
+            <a href="contacto2.html" class="nav-enlace desaparece">Contactanos</a>
+        </nav>
 
-        <!--HEADER
-
-            <div class="header">
-                <ul>
-                    <li style="order: 1;"> <a href="index.html">INICIO</a></li>
-                    <li style="order: 2;"> <a href="pageMaquinas.html">EXPENDEDORAS</a></li>
-                    <li style="order: 3;"> <a href="PageProductos.html">PRODUCTOS</a></li>
-                    <li style="order: 4;"> <a href="contacto2.html">CONTACTO</a></li>
-                </ul>
-            </div>-->
-
-            <!--HEADER-->
-            <nav>
-                <button class="nav-boton" onclick="seleccionarMenu()" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Menú</button>
-                <a href="index.html" class="nav-enlace desaparece">Inicio</a>
-                <a href="pageMaquinas.html" class="nav-enlace desaparece">Expendedoras</a>
-                <a href="pageProductos.html" class="nav-enlace desaparece">Productos</a>
-                <a href="contacto2.html" class="nav-enlace desaparece">Contactanos</a>
-            </nav>
-
-            <script type="text/javascript" src="funciones.js"></script>
+        <script type="text/javascript" src="funciones.js"></script>
 
 
         <!--IMAGEN-->
@@ -52,27 +40,24 @@
                 </h3></p>
             </div>
 
-        
-
-                <!--cubo-->
-                <div id="envoltura">
-                    <div class="cubo">
-                        <!-- Frente-->
-                        <div><img src="imagenes/nido2.png" width="150px" height="150px"></div>
-                        <!-- Fondo-->
-                        <div><img src="imagenes/lays.png" width="150px" height="150px"> </div>
-                        <!-- Izquierda-->
-                        <div><img src="imagenes/nescafe.png" width="150px" height="150px"></div>
-                        <!-- Derecha-->
-                        <div><img src="imagenes/nesquick.png" width="150px" height="150px"></div>
-                        <!-- Arriba-->
-                        <div><img src="imagenes/coca.png" width="150px" height="150px"></div>
-                        <!-- Abajo-->
-                        <div><img src="imagenes/pepsi.png" width="150px" height="150px"></div>
-                    </div>
+            <!--cubo-->
+            <div id="envoltura">
+                <div class="cubo">
+                    <!-- Frente-->
+                    <div><img src="imagenes/nido2.png" width="150px" height="150px"></div>
+                    <!-- Fondo-->
+                    <div><img src="imagenes/lays.png" width="150px" height="150px"> </div>
+                    <!-- Izquierda-->
+                    <div><img src="imagenes/nescafe.png" width="150px" height="150px"></div>
+                    <!-- Derecha-->
+                    <div><img src="imagenes/nesquick.png" width="150px" height="150px"></div>
+                    <!-- Arriba-->
+                    <div><img src="imagenes/coca.png" width="150px" height="150px"></div>
+                    <!-- Abajo-->
+                    <div><img src="imagenes/pepsi.png" width="150px" height="150px"></div>
                 </div>
+            </div>
             
-
             <div class="grid-item">
                 <h2>Calidad Garantizada</h2>
                 <br>
@@ -116,6 +101,6 @@
         <!--FOOTER-->
         <div class="footer">
             <p>ATENCIÓN DE LUNES A VIERNES DE 8:00 A 17:00</p>
-            </div>
+        </div>
     </body>
 </html>

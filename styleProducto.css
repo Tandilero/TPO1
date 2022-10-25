@@ -204,7 +204,6 @@ h1 {
 
 }
 
-/*REVISAR LOS MEDIA*/
 @media only screen and (max-width:900px){
     nav{
         flex-direction: column;
