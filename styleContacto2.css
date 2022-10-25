@@ -18,23 +18,24 @@ body {
 
 /*MENU*/
 nav{
-    background-color: lightblue;
+    background-color:rgb(225, 237, 237);
     display: flex;
     /*Para que quede a la izquierda pongo flex-end - al medio space-around*/
     justify-content: space-around;
-    margin: 10px;
+    margin: 10px 0px;
 }
 .nav-enlace{
     display: inline-block;
     background-color: #0065c6;
-    color: white;
+    color: azure;
+    justify-content:stretch;
     font-weight: bold;
     padding: 10px 30px;
     text-decoration: none;
-    border: 1px solid;
-    border-radius: 3px;
+    border: 2px solid #868c95;
     width: 100%;
     text-align: center;
+    border-radius: 10px;
 }
 .nav-enlace:hover{
     background-color: #333;
@@ -65,7 +66,8 @@ nav{
 }
 
 .contact-wraper{
-
+    border-radius: 10px;
+    border: 2px solid #868c95;
     background-color: #0065c6;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
     padding: 20px;
@@ -73,6 +75,7 @@ nav{
     grid-template-columns: 2fr 1fr;
 }
 .contact-form{
+    border-radius: 10px;
     background-color: rgb(225, 237, 237);
     align-items: center;
 }
@@ -100,9 +103,10 @@ nav{
     border-bottom: 1px solid #000;
 }
 .contact-form form button{
+    border: 2px solid #868c95;
+    border-radius: 10px;
     background-color: #0065c6;
     font-size: large;
-    border: 0;
     margin: 20px;
     padding: 10px 0;
     
@@ -111,6 +115,7 @@ nav{
     color: #fff;
 }
 .contact-info{
+    border-radius: 10px;
     padding: auto 10px;
     background-color: cornflowerblue;
     text-align: center;
@@ -133,6 +138,9 @@ nav{
     }
     .nav-boton{
         display: inline-block;
+        border-radius: 10px;
+        border: 2px solid #868c95;
+        width: 100%;
     }
     .desaparece{
         display: none;
