@@ -10,7 +10,6 @@ body {
 nav{
     background-color:rgb(225, 237, 237);
     display: flex;
-    /*Para que quede a la izquierda pongo flex-end - al medio space-around*/
     justify-content: space-around;
     margin: 10px 0px;
 }
