@@ -10,7 +10,6 @@ body {
 nav{
     background-color: rgb(225, 237, 237);
     display: flex;
-    /*Para que quede a la izquierda pongo flex-end - al medio space-around*/
     justify-content: space-around;
     margin: 10px 0px;
 }
@@ -136,15 +135,15 @@ h1 {
     text-align: center;
 }
 
-/*CUBO*/
-  #envoltura {        /* Este div contiene todo el cubo */
-    width: 150px;   /* El cubo debe girar aqui dentro   */
+
+#envoltura {        
+    width: 150px;  
     height: 150px;
-    perspective: 1000px;  /* "Distancia focal" al cubo */
+    perspective: 1000px; 
     margin: auto; 
-    padding: 80px; /* Margenes del contenedor   */
+    padding: 80px; 
   
-  }
+}
 .cubo {         
 
     width: 150px;                              
@@ -191,7 +190,7 @@ h1 {
 }        
 
 
-.cubo div {              /*Caras del cubo*/
+.cubo div {              
     position: absolute;
     width: 150px;        
     height: 150px;            
