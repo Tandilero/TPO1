@@ -60,3 +60,23 @@ function seleccionarMenu(){
         ancla[i].classList.toggle('desaparece');
     }
 }
+
+
+    //API
+
+    var myHeaders = new Headers();
+    myHeaders.append("x-access-token", "goldapi-5r8sitl9e8r3nr-io");
+    myHeaders.append("Content-Type", "application/json");
+
+    var requestOptions = {
+    method: 'GET',
+    headers: myHeaders,
+    redirect: 'follow'
+    };
+    console.log(requestOptions)
+
+    fetch("https://www.goldapi.io/api/XAU/USD", requestOptions)
+    .then(response => response.json())
+    .then(result => document.getElementById("cafe").innerHTML =(result.price))
+    .catch(error => console.log('error', error));  
+        

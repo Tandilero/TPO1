@@ -144,7 +144,7 @@ h1 {
     padding: 80px; 
   
 }
-.cubo {         
+.carrusel{         
 
     width: 150px;                              
     height: 150px;
@@ -157,40 +157,40 @@ h1 {
     transition: 20s ease-in;
 }
 
-.cubo div:nth-child(1) { 
+.carrusel div:nth-child(1) { 
     transform: translateZ(130px);   
     background-color: rgb(225, 237, 237);  
     border-radius: 2px;     
     
 }
-.cubo div:nth-child(2) {
+.carrusel div:nth-child(2) {
     transform: rotateY(60deg) translateZ(130px); 
     background-color: rgb(225, 237, 237);
     border-radius: 2px;
 }
-.cubo div:nth-child(3) { 
+.carrusel div:nth-child(3) { 
     transform: rotateY(120deg) translateZ(130px); 
     background-color:rgb(225, 237, 237);
     border-radius: 2px;
 }
-.cubo div:nth-child(4) { 
+.carrusel div:nth-child(4) { 
     transform: rotateY(180deg) translateZ(130px); 
     background-color:rgb(225, 237, 237);
     border-radius: 2px;
 }
-.cubo div:nth-child(5) { 
+.carrusel div:nth-child(5) { 
     transform: rotateY(240deg) translateZ(130px);
     background-color:rgb(225, 237, 237);
     border-radius: 2px;
 }
-.cubo div:nth-child(6) { 
+.carrusel div:nth-child(6) { 
     transform: rotateY(300deg) translateZ(130px);
     background-color: rgb(225, 237, 237);
     border-radius: 2px;
 }        
 
 
-.cubo div {              
+.carrusel div {              
     position: absolute;
     width: 150px;        
     height: 150px;            
